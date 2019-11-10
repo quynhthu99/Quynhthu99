@@ -1,0 +1,17 @@
+p, h1, h2 {color: pink}
+
+.mauxanh{
+color: blue;
+font-size: 2.5cm
+}
+#text{
+
+}
+    body{
+        background: url(https://i.khoahoc.tv/photos/image/2017/10/24/rac-vu-tru.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+ .block{
+     display: block
+ }   
