@@ -31,16 +31,3 @@ var sum = arrNumber.reduce(function (a, b) {
 console.log(sum);
 
 //paging
-function paging(array, so_phan_tu_1_trang){
-    var results = [];
- 
-    while (array.length) {
-        results.push(array.splice(0, so_phan_tu_1_trang)); //splice: thêm 1 mục + xóa 1 mục, push thì thêm luôn vào cuối
-    }
- 
-    return results;
-}
- 
-var result = paging([1,2,3,4,5,6,7,8], 3);
-
-console.log(result);
