@@ -153,6 +153,4 @@ const getData = (number) => {
       tt2: 2,
       tt3: 4,
     }
-    
-    const user2 = { ...user }
-    const user3 = user2;
+  }
