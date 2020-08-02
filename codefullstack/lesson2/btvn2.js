@@ -31,3 +31,6 @@ var sum = arrNumber.reduce(function (a, b) {
 console.log(sum);
 
 //paging
+let a=[1,2,3,4,5,6,7,23,23,12,15];
+let page = 3;
+let size= 4;
