@@ -3,10 +3,10 @@ const mysql = require('mysql'); //import thu vien
 
 //declare config
 const config= {
-        host: 'codedidungso.me',
+        host: 'localhost',
         port: '3306', //defaul = 3306
         user: 'root',
-        password: '123456',
+        password: 'luongquynhthu12345',
         database: 'shopese'
 }
 

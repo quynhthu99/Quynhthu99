@@ -3,7 +3,7 @@ drop table if exists `category`;
 drop table if exists `user`;
 drop table if exists `order`;
 drop table if exists `orderDetail`;
--- sua bang alter table -- google.com
+-- sua bang alteraccountcategoryproduct table -- google.com
 create table `product`(
 	productId nvarchar(10) primary key,
 	-- dung nvarchar co dinh duoc do dai
