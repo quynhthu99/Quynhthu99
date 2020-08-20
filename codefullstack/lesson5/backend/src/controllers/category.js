@@ -1,20 +1,11 @@
-const pool = require('../utills/db')
+// xu ly du lieu lay tu service
+const categoryService = require('../services/category')
 
 const getAllCategory = (req,res) =>{
-    pool.query('select * from `category`;', (err, data)=>{
-        if (err){ res.send('Eror Query')
-        console.log(err)}
-        res.send(data)
-    })
+  categoryService.getAllCategory(req,res)
 }
 const getAllCategoryById = (req,res) =>{
-    pool.query('select * from `category` where `categoryId` = "4f8fcbe7-8dad-39e7-b105-5765d373f926"',(err,data) =>{
-        if (err) {res.send('Erorr Query')
-                console.log(err)}
-                else {
-                    res.send(data)
-                }
-    })
+    res.send("get one")
 }
 const createCategory = (req,res) =>{
     res.send('create ')

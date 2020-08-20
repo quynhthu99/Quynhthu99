@@ -441,7 +441,7 @@ where `username` = 'xxx'
 -- thống kê lãi - lỗ của các order của loại mặt hàng 'xxx'
 -- thống kê lãi - lỗ của các order của user 'xxx' đối với loại mặt hàng 'xxx'
 
---liệt kê đơn hàng user có sđt 0123
+-- liệt kê đơn hàng user có sđt 0123
 select `orderID`,`order`.`username`
 from `order`, `account`
 where `order`.`username`=`account`.`username` and `number` like '0123%'
@@ -460,12 +460,12 @@ from `category`
 where `display` = 'xxx' or `display` = 'yyy';
 
 -- hiện thị đơn hàng mà người dùng có sđt 0123 đã mua
-select sum(price), 
-from order, account
-where order.username = account.username
-and account.usename = '0123'
---hiển thị các đơn hàng của mặt hàng 'Máy tính' hoặc 'Điện thoại' có giá tiền >1.000.000 mua bởi người dùng 'chuhieu'
-(select orderID
+-- select sum(price), 
+--  order, account
+-- where order.username = account.username
+-- and account.usename = '0123'
+-- hiển thị các đơn hàng của mặt hàng 'Máy tính' hoặc 'Điện thoại' có giá tiền >1.000.000 mua bởi người dùng 'chuhieu'
+select orderID
 form order as O inner join product as P on P.productID = O.productID inner join account as A on A.username = O.username
 where username = 'chuhieu' and price > 1.000.000 and P.display = 'Máy tính')
 union
